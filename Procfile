@@ -1,0 +1,1 @@
+web: gunicorn backend_my_hero_trivia.wsgi
