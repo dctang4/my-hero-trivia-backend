@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from myapp.views import HighscoreView, OneHighscoreView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('highscore/', HighscoreView.as_view()),
+    path('highscore/<param>/', OneHighscoreView.as_view())
 ]
